@@ -32,7 +32,7 @@ namespace TheLastStop
 
         private void Update()
         {
-            if (trigger == null || !trigger.isActiveAndEnabled) visible = false;
+            visible = trigger != null && trigger.isActiveAndEnabled && trigger.IsAvailable;
             canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, visible ? 1 : 0,
                 Time.unscaledDeltaTime / Mathf.Max(0.01f, fadeDuration));
         }

@@ -45,6 +45,12 @@ namespace TheLastStop
             if (!wasAvailable && IsAvailable) availabilityChanged.Invoke(true);
         }
 
+        private void OnTriggerStay(Collider other)
+        {
+            // Recover occupancy after a script reload or an interrupted enter callback.
+            OnTriggerEnter(other);
+        }
+
         private void OnTriggerExit(Collider other)
         {
             bool wasAvailable = IsAvailable;
