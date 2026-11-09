@@ -1,11 +1,15 @@
 {
   "dependencies": {
+    "com.unity.burst": "2.0.0",
+    "com.unity.cinemachine": "6.6.0",
     "com.unity.collab-proxy": "2.13.6",
+    "com.unity.collections": "6.6.0",
     "com.unity.ide.rider": "3.0.40",
     "com.unity.ide.visualstudio": "2.0.28",
     "com.unity.inputsystem": "1.20.0",
     "com.unity.probuilder": "6.1.4",
     "com.unity.render-pipelines.universal": "17.6.0",
+    "com.unity.splines": "2.9.0",
     "com.unity.ugui": "2.6.0",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.adaptiveperformance": "1.0.0",
