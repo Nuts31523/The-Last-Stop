@@ -3489,7 +3489,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4609155498843147925, guid: 3882a9528ab48e243b15d15d1f21dba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2003350318}
   m_SourcePrefab: {fileID: 100100000, guid: 3882a9528ab48e243b15d15d1f21dba6, type: 3}
 --- !u!1 &1324053945
 GameObject:
@@ -5023,6 +5026,24 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &2003350310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4609155498843147925, guid: 3882a9528ab48e243b15d15d1f21dba6, type: 3}
+  m_PrefabInstance: {fileID: 1292459542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003350318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003350310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ea196fc8905f44080aad59c2684480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract
+  interactRange: 3
 --- !u!43 &2006690924
 Mesh:
   m_ObjectHideFlags: 0
