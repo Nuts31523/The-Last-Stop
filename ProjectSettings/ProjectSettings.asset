@@ -796,7 +796,26 @@ PlayerSettings:
   webWasm2023: 1
   webEnableSubmoduleStrippingCompatibility: 0
   webProgressiveAssetLoading: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    EmbeddedLinux: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    GameCoreScarlett: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    GameCoreXboxOne: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Kepler: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    LinuxHeadlessSimulation: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Nintendo Switch: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Nintendo Switch 2: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    PS4: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    PS5: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    QNX: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Server: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Standalone: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    VisionOS: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    WebGL: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    Windows Store Apps: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    XboxOne: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    iPhone: UNITY_MCP_READY;UNITY_MCP_DEPS_51
+    tvOS: UNITY_MCP_READY;UNITY_MCP_DEPS_51
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
