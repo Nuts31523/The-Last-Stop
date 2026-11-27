@@ -5883,7 +5883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Intensity
-      value: 1.25
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Shadows.m_Bias
@@ -10992,7 +10992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Intensity
-      value: 2.45
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Shadows.m_Bias
@@ -12474,7 +12474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 918872595067304888, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       propertyPath: m_Shadows.m_Bias
@@ -12563,6 +12563,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8062994409066012359, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1942393612}
+    - targetCorrespondingSourceObject: {fileID: 8062994409066012359, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1799833301}
   m_SourcePrefab: {fileID: 100100000, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
 --- !u!4 &1942393610 stripped
 Transform:
@@ -12603,6 +12606,36 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!23 &1799833300 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1104211689595129879, guid: af35f1d1c8ce1b94fbac67d749a18748, type: 3}
+  m_PrefabInstance: {fileID: 1942393609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1799833302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1096072570875155167, guid: 556ff9105ea776b4091b8f16ed0412ee, type: 3}
+  m_PrefabInstance: {fileID: 7760312043711506871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1799833301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942393611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e006749e49aa4116830c4a97a2b1f459, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
+  diffuser: {fileID: 1799833300}
+  player: {fileID: 2003350309}
+  activationLanding: {fileID: 1799833302}
+  landingApproachOffset: {x: -1.43, y: -0.63}
+  pauseRange: {x: 1.5, y: 2.5}
+  blackoutRange: {x: 3.5, y: 4.5}
+  dimRestartChance: 0.45
+  burstRestartChance: 0.3
 --- !u!1 &1950045611
 GameObject:
   m_ObjectHideFlags: 0
@@ -12653,6 +12686,11 @@ Transform:
   - {fileID: 1933427385}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2003350309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3800143280162067503, guid: 3882a9528ab48e243b15d15d1f21dba6, type: 3}
+  m_PrefabInstance: {fileID: 1292459542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003350310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4609155498843147925, guid: 3882a9528ab48e243b15d15d1f21dba6, type: 3}
